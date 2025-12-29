@@ -1,0 +1,17 @@
+[package]
+name = "compressor"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+async_zip = { version = "0.0.18" }
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.7.17", features = ["compat"] }
+
+[[bin]]
+name = "quickstart"
+path = "src/quickstart.rs"
+
+# [[bin]]
+# name = "zipfilereader"
+# path = "src/zipfilereader.rs"
